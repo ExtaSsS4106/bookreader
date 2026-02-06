@@ -26,13 +26,13 @@
    ```bash
    git clone https://github.com/ExtaSsS4106/bookreader.git
    cd /path/to/folder/
-
+    ```
    # Или
 
-   ```bash
+    ```bash
    git clone git@github.com:ExtaSsS4106/bookreader.git
    cd /path/to/folder/
-
+    ```
 
 2. **Запуск андроид студио**
 
@@ -50,7 +50,7 @@
             implementation("com.google.code.gson:gson:2.10.1")
             implementation("androidx.core:core-ktx:1.12.0")
         }
-    
+    ```
     далее в файле libs.versions.toml пропишите
     
     ```bash
@@ -58,7 +58,7 @@
         adpdfw= "2.8.2"
         
         android-pdf-viewer = { module = "com.github.barteksc:android-pdf-viewer", version.ref = "adpdfw" }
-    
+    ```
     В файле (build.gradle.kts (:bookreader))
     
     ```bash
@@ -70,10 +70,10 @@
                 maven ( url = "https://repository.liferay.com/nexus/content/repositories/public/" )
             }
         }
-        
+     ```   
     И в gradle.properties 
     
     ```bash
             android.enableJetifier=true
             
-    
+    ```
