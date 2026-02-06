@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2b2b2b"
+    tools:context=".bookShelf">
+
+    <!-- Верхняя панель с кнопкой -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#323333"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="◀ Назад"
+            android:background="#004D40"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <!-- PDF Viewer занимает всё оставшееся пространство -->
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/PDFView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
