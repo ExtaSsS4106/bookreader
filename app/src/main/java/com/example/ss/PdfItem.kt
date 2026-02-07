@@ -6,7 +6,7 @@ data class PdfItem(
     val displayName: String,
     val uriString: String,
     val type: String,
-    val thumbnailPath: String? = null,  // ← Добавляем путь к миниатюре
+    val thumbnailPath: String? = null,
     val pageCount: Int = 0,
     val currentPage: Int = 0,
 )
